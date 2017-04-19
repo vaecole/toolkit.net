@@ -52,7 +52,7 @@ namespace common.Utility
                     }
                     catch (Exception ex)
                     {
-                        LogHelper.LogHelper.LogError(ex);
+                        LogHelper.LogHelper.Log(ex);
                         _localDataPath = Environment.CurrentDirectory;
                     }
                 }
