@@ -5,11 +5,7 @@ public class Main {
 
     }
 
-    public static void print(int value) {
-        System.out.println(value);
-    }
-
-    public static void print(String str){
+    public static void print(Object str){
         System.out.println(str);
     }
 

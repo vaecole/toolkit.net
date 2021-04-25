@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 最小回文数
+ * 众数
  */
 public class S1 extends SolutionBase {
     @Override
