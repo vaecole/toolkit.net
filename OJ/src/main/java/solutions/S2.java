@@ -8,7 +8,7 @@ import java.util.Stack;
  */
 public class S2 extends SolutionBase {
     @Override
-    public void resolve() {
+    public void solve() {
         String[] strs = scanStrings();
         for (String baseStr : strs) {
             String upper = baseStr.substring(0, baseStr.length() / 2);

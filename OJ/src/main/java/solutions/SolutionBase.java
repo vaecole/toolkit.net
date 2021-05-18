@@ -3,7 +3,7 @@ package solutions;
 import java.util.Scanner;
 
 public class SolutionBase {
-    public void resolve() {
+    public void solve() {
         print("Resolved!");
     }
 
@@ -35,7 +35,7 @@ public class SolutionBase {
         System.out.println(value);
     }
 
-    public void print(String str) {
+    public void print(Object str) {
         System.out.println(str);
     }
 }

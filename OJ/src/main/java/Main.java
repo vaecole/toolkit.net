@@ -1,8 +1,11 @@
+import solutions.Leetcode78;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        Leetcode78 leetcode78 = new Leetcode78();
+        leetcode78.solve();
     }
 
     public static void print(Object str){

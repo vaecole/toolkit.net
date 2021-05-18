@@ -14,7 +14,7 @@ package solutions;
  */
 public class S3 extends SolutionBase {
     @Override
-    public void resolve() {
+    public void solve() {
         int[] nums = scanInts();
         for (int num : nums) {
             int mask = 1;

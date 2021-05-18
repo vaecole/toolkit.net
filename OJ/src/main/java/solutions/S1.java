@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public class S1 extends SolutionBase {
     @Override
-    public void resolve() {
+    public void solve() {
         int[] nums = scanInts();
         Map<Integer, Integer> counter = new HashMap<>();
         for (int num : nums) {
