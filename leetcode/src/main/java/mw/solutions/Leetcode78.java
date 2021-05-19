@@ -1,4 +1,4 @@
-package solutions;
+package mw.solutions;
 
 import java.util.ArrayList;
 import java.util.Arrays;

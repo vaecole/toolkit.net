@@ -1,11 +1,15 @@
-import solutions.Leetcode78;
+package mw;
+
+import mw.solutions.Leetcode121;
+import mw.solutions.Leetcode78;
+import mw.solutions.SolutionBase;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Leetcode78 leetcode78 = new Leetcode78();
-        leetcode78.solve();
+        SolutionBase solution = new Leetcode121();
+        solution.solve();
     }
 
     public static void print(Object str){

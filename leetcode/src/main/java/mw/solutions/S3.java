@@ -1,4 +1,4 @@
-package solutions;
+package mw.solutions;
 
 /**
  * 二进制1的个数

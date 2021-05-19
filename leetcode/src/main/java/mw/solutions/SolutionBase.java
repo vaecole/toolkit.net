@@ -1,4 +1,4 @@
-package solutions;
+package mw.solutions;
 
 import java.util.Scanner;
 
@@ -31,11 +31,7 @@ public class SolutionBase {
         return strs;
     }
 
-    public void print(int value) {
-        System.out.println(value);
-    }
-
-    public void print(Object str) {
-        System.out.println(str);
+    public void print(Object obj) {
+        System.out.println(obj);
     }
 }
