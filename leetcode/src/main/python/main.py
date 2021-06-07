@@ -1,4 +1,4 @@
-import leetcode198
+import leetcode56
 import leetcode338
 import leetcode664
 
@@ -10,4 +10,5 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print(leetcode198.Solution().rob([183,219,57,193,94,233,202,154,65,240,97,234,100,249,186,66,90,238]))
+    print(leetcode56.Solution().merge([[1,4],[0,0]]))
+        # [[183, 219], [57, 193], [94, 233], [154, 202], [65, 240], [97, 234], [100, 249], [66, 186], [90, 238]]))
