@@ -1,13 +1,17 @@
 package mw.solutions;
 
+import java.util.Arrays;
 import java.util.List;
-/*
+import java.util.stream.Collectors;
+
+/**
  *
  */
 
 public class CLVTInterview extends SolutionBase {
 
-    /*
+    /**
+     * Clari(vate) Interview
      * Complete the 'getMaxColors' function below.
      *
      * The function is expected to return an INTEGER.
@@ -38,4 +42,12 @@ public class CLVTInterview extends SolutionBase {
         return max;
     }
 
+    @Override
+    public void solve() {
+        int[] inputs = scanInts();
+        int priceCount = inputs[0];
+        List<Integer> prices = Arrays.stream(inputs).skip(1).limit(priceCount).boxed().collect(Collectors.toList());
+        int money = inputs[inputs.length - 1];
+        print(getMaxColors(prices, money));
+    }
 }

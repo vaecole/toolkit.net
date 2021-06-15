@@ -1,11 +1,11 @@
 package mw.solutions;
 
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
-public class SolutionBase {
-    public void solve() {
-        print("Resolved!");
-    }
+public abstract class SolutionBase {
+    public abstract void solve();
 
     public int[] scanInts() {
         Scanner scanner = new Scanner(System.in);
@@ -21,7 +21,9 @@ public class SolutionBase {
 
     public String[] scanStrings() {
         Scanner scanner = new Scanner(System.in);
-        int len = scanner.nextInt();
+        if (!scanner.hasNextInt())
+            throw new RuntimeException("Please input a number first to specify the length of String[]");
+        int len = Integer.parseInt(scanner.nextLine());
         String[] strs = new String[len];
         int index = 0;
         while (len > 0) {
@@ -33,5 +35,11 @@ public class SolutionBase {
 
     public void print(Object obj) {
         System.out.println(obj);
+    }
+
+    public <T> void printArray(T[] obj) {
+        System.out.print("[");
+        System.out.print(Arrays.stream(obj).map(Object::toString).collect(Collectors.joining(",")));
+        System.out.println("]");
     }
 }
