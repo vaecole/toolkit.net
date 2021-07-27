@@ -1,0 +1,75 @@
+{
+  "name": "QIMA Interview Workflow",
+  "steps": [
+    {
+      "actions": [
+        {
+          "type": "CHECKLIST_ACTION",
+          "checklist": {
+            "name": "Product checklist",
+            "checklistItemList": [
+              {
+                "type": "NUMBER",
+                "checkPoint": false,
+                "numberComparator": "GREATER",
+                "response": 11,
+                "expected": 10
+              },
+              {
+                "type": "YES_NO",
+                "checkPoint": true,
+                "response": true,
+                "expected": false
+              },
+              {
+                "type": "TEXT",
+                "checkPoint": true,
+                "response": "\\ invalid"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "MEASUREMENT_ACTION",
+          "measureChecklist": {
+            "name": "Product measurements",
+            "tolerance": "UNIT",
+            "toleranceValue": 6.5,
+            "measureList": [
+              {
+                "result": 12,
+                "tolerance": 10
+              },
+              {
+                "result": 16,
+                "tolerance": 10
+              }
+            ]
+          }
+        },
+        {
+          "type": "MEASUREMENT_ACTION",
+          "measureChecklist": {
+            "name": "Product measurements",
+            "tolerance": "PERCENTAGE",
+            "toleranceValue": 15,
+            "measureList": [
+              {
+                "result": 12,
+                "tolerance": 10
+              },
+              {
+                "result": 12.5,
+                "tolerance": 12
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
